@@ -1,0 +1,164 @@
+@import "colors";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background-color: #fff;
+}
+
+nav {
+  text-transform: uppercase;
+  background-color: transparent;
+  z-index: 1;
+  .navbar-brand {
+    font-weight: 700;
+  }
+
+  span.letter-in-tittle {
+    color: $green_hover;
+  }
+
+  .navbar-brand,
+  .nav-link,
+  .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+  }
+
+  .fa-bars {
+    padding: 10px;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  .nav-link:hover,
+  i.fa-solid:hover {
+    color: $green_hover;
+  }
+
+  .active {
+    color: $green_hover !important;
+  }
+
+  button.navbar-toggler {
+    border-color: transparent;
+  }
+}
+
+header {
+  position: relative;
+  background-color: transparent;
+  height: 20vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.btn-outline-light {
+  text-transform: uppercase;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100px;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.hide-on-small {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 100vh;
+  }
+  .navbar-brand {
+    .logo {
+      width: 40px;
+    }
+  }
+
+  .navbar-nav {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+
+    a {
+      padding-top: 8px;
+    }
+  }
+
+  .navbar-toggler {
+  }
+
+  .hide-on-small {
+    display: none;
+  }
+
+  video {
+    display: none;
+  }
+  .title-webside {
+    display: none;
+  }
+  .hero-img {
+    position: relative;
+    display: block;
+    height: 100vh;
+    background-image: url("../img/hero-img-mobile1.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: black;
+
+    h1 {
+      font-size: 46px !important;
+      font-family: "Vujahday Script", cursive;
+
+      .prosto {
+        text-align: center;
+        color: rgb(10, 43, 4);
+      }
+      .z {
+        margin-bottom: 0px;
+
+        color: rgb(197, 201, 196);
+      }
+      .drewna {
+        margin-top: -30px;
+        color: rgb(197, 201, 196);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-img {
+    display: none;
+  }
+}

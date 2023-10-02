@@ -1,0 +1,135 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background-color: #fff;
+}
+
+nav {
+  text-transform: uppercase;
+  background-color: transparent;
+  z-index: 1;
+}
+nav .navbar-brand {
+  font-weight: 700;
+}
+nav span.letter-in-tittle {
+  color: rgb(93, 138, 14);
+}
+nav .navbar-brand,
+nav .nav-link,
+nav .navbar-nav .nav-link {
+  color: rgb(0, 0, 0);
+}
+nav .fa-bars {
+  padding: 10px;
+}
+nav .logo {
+  height: 80px;
+}
+nav .nav-link {
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav .nav-link:hover,
+nav i.fa-solid:hover {
+  color: rgb(93, 138, 14);
+}
+nav .active {
+  color: rgb(93, 138, 14) !important;
+}
+nav button.navbar-toggler {
+  border-color: transparent;
+}
+
+header {
+  position: relative;
+  background-color: transparent;
+  height: 20vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100px;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.hide-on-small {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 100vh;
+  }
+  .navbar-brand .logo {
+    width: 40px;
+  }
+  .navbar-nav {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .navbar-nav a {
+    padding-top: 8px;
+  }
+  .hide-on-small {
+    display: none;
+  }
+  video {
+    display: none;
+  }
+  .title-webside {
+    display: none;
+  }
+  .hero-img {
+    position: relative;
+    display: block;
+    height: 100vh;
+    background-image: url("../img/hero-img-mobile1.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: black;
+  }
+  .hero-text h1 {
+    font-size: 46px !important;
+    font-family: "Vujahday Script", cursive;
+  }
+  .hero-text h1 .prosto {
+    text-align: center;
+    color: rgb(10, 43, 4);
+  }
+  .hero-text h1 .z {
+    margin-bottom: 0px;
+    color: rgb(197, 201, 196);
+  }
+  .hero-text h1 .drewna {
+    margin-top: -30px;
+    color: rgb(197, 201, 196);
+  }
+}
+@media (min-width: 768px) {
+  .hero-img {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
